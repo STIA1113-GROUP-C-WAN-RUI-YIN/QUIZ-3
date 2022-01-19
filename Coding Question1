@@ -15,7 +15,7 @@ public class Question1 {
           System.out.println("4. Sort the array by using any sort method");
         
          int choose = scan.nextInt();
-   
+         Input (item);
       
           switch (choose){
               case 1:
@@ -84,4 +84,7 @@ public class Question1 {
 		
 		
 	}
+
+
+
 
