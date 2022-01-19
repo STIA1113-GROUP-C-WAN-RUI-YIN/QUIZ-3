@@ -21,12 +21,8 @@ public class Question1 {
 		int find = scan.nextInt();
        	 
 		Find(item, find);
-		Arrays.sort(item);   
-		System.out.println("Elements of array sorted in ascending order: ");  
-		for (int y = 0; y < item.length; y++)   
-		{       
-		System.out.println(item[y]);   
-		}   
+		Sort(item) ;
+		
 	}
 
 	
@@ -42,14 +38,21 @@ public class Question1 {
 					  System.out.println("The search value is " + num[j]);
 					  break;
 				 }
-			  }		
+			  }	
+			 if(searchValue > 4 || searchValue < 0) {
+				  System.out.println("The search value is not found."); 
+		}
+		}
+		
+		public static void Sort (int[ ] z) {
+			Arrays.sort(z);  
+			System.out.println("Elements of array sorted in ascending order: ");  
+			for (int y = 0; y < z.length; y++)   
+			{       
+			System.out.println(z[y]);   
+			}   
 		}
 		
 		
 		
-		
-		
-		
 	}
-
-
